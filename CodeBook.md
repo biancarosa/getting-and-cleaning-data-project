@@ -6,12 +6,19 @@ The original data can be downloaded [here](https://d396qusza40orc.cloudfront.net
 
 The goal was to merge the train and the test data and make a tidy dataset.
 The script `run_analysis.R` does the following:
+
 1. Download the dataset if needed
+
 2. Unzip the dataset if needed
+
 3. Merge the train and test data
+
 4. Extracts only the measurements with the mean and standard deviation
+
 5. Label activities with the `activity_labels.txt` file
+
 6. Replace variable names to make them more descriptive
+ 
 7. Creates a tidy dataset with the average of each variable for each activity and each subject
 
 ## Columns
