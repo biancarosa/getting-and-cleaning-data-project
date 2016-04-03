@@ -62,6 +62,6 @@ names(all) <- gsub("BodyBody", "Body", names(all))
 
 # From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 tidy <- aggregate(. ~ subject + activity, all, mean)
-write.table(tidy, file = "tidy.txt")
+write.table(tidy, file = "tidy.txt", row.names = FALSE, quote = FALSE)
 print("Tidy data set generated")
 
